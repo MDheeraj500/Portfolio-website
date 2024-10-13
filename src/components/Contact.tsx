@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
     alert('Thank you for your message! I will get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
 
-    const email = "mdheeraj2000@gmail.com";
+    const email = "dheerajmachiraju24@gmail.com";
 
     const mailtoLink = `mailto:${email}`;
 
