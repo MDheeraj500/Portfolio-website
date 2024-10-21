@@ -18,7 +18,7 @@ const projects = [
     // description: 'Description of your second project.',
     image: chicago_crime_data_analysis_image,
     tags: ['Python', 'Data Visualization', 'Data Analysis', 'Hypothesis Testing', 'Geospatial Analysis', 'Temporal Analysis', 'Tableau', 'Statistical Inference', 'Google Colab', 'Anomaly Detection'],
-    github: 'https://github.com/yourusername/project2',
+    github: 'https://github.com/MDheeraj500/Chicago-crime-2023-data-analysis',
     demo: 'https://yourproject2demo.com',
   },
   {
