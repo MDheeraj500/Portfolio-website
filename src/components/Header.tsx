@@ -11,9 +11,11 @@ const Header: React.FC<HeaderProps> = ({ scrollPosition }) => {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrollPosition > 50 ? 'bg-black bg-opacity-80 backdrop-blur-md' : ''}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-blue-500">Machiraju <span className="text-green-500">Dheeraj </span><span className="text-purple-500">Marthand</span></a>
+        <a href="#" className="flex items-center">
+          <img src="/Dheeraj2.png" alt="Signature" className="h-20" /> {/* Adjust height as needed */}
+        </a>
         <nav className="hidden md:flex space-x-8">
-          {['Home', 'Projects', 'Skills', 'Contact'].map((item) => (
+          {['Home', 'Projects', 'Skills', 'Contact', 'Resume'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-lg hover:text-blue-500 transition-colors">
               {item}
             </a>
@@ -26,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ scrollPosition }) => {
       {isMenuOpen && (
         <div className="md:hidden bg-black bg-opacity-90 backdrop-blur-md">
           <nav className="flex flex-col items-center py-4">
-            {['Home', 'Projects', 'Skills', 'Contact'].map((item) => (
+            {['Home', 'Projects', 'Skills', 'Contact', 'Resume'].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
