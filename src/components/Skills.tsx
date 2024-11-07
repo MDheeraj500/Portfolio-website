@@ -7,7 +7,7 @@ import mysql from '../assets/images/mysql.webp'
 import pandas from '../assets/images/pandas.png'
 import tableau from '../assets/images/tableau.png'
 import numpy from '../assets/images/numpy.png'
-import keras from '../assets/images/keras.png'
+import keras from '../assets/images/Keras.png'
 import scikitlearn from '../assets/images/scikit.png'
 
 const skills = [
