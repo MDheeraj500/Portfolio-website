@@ -4,14 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// import 'swiper/swiper.min.css';
-//import SwiperCore from 'swiper';
 import fake_news_classifier_image from '../assets/images/fake-news-classifier-image.webp';
 import chicago_crime_data_analysis_image from '../assets/images/chicago-crime-data-analysis-image.webp';
 import movie_review_sentiment_analyzer_image from '../assets/images/movie-review-sentiment-analyzer-image.webp';
 
-// Initialize Swiper modules
-//SwiperCore.use([Pagination, Navigation]);
 
 const projects = [
   {
