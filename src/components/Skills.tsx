@@ -1,16 +1,26 @@
 import React from 'react';
+import Flask2 from '../assets/images/flask2.png'
+import tensorflow from '..//assets/images/tensorflow.png'
+import jupyter from '../assets/images/jupyter.png'
+import matplotlib from '../assets/images/matplotlib.png'
+import mysql from '../assets/images/mysql.webp'
+import pandas from '../assets/images/pandas.png'
+import tableau from '../assets/images/tableau.png'
+import numpy from '../assets/images/numpy.png'
+import keras from '../assets/images/keras.png'
+import scikitlearn from '../assets/images/scikit.png'
 
 const skills = [
-  { name: 'Flask', image: 'src/assets/images/Flask2.png', color: 'bg-blue-500' },
-  { name: 'TensorFlow', image: 'src/assets/images/tensorflow.png', color: 'bg-orange-500' },
-  { name: 'Jupyter', image: 'src/assets/images/jupyter.png', color: 'bg-gray-200' },
-  { name: 'Matplotlib', image: 'src/assets/images/matplotlib.png', color: 'bg-green-500' },
-  { name: 'MySQL', image: 'src/assets/images/mysql.webp', color: 'bg-white' },
-  { name: 'Pandas', image: 'src/assets/images/pandas.png', color: 'bg-teal-500' },
-  { name: 'Tableau', image: 'src/assets/images/tableau.png', color: 'bg-blue-300' },
-  { name: 'NumPy', image: 'src/assets/images/numpy.png', color: 'bg-yellow-500' },
-  { name: 'Keras', image: 'src/assets/images/keras.png', color: 'bg-red-500' },
-  { name: 'SciKit Learn', image: 'src/assets/images/scikit.png', color: 'bg-gray-800' },
+  { name: 'Flask', image: Flask2, color: 'bg-blue-500' },
+  { name: 'TensorFlow', image: tensorflow, color: 'bg-orange-500' },
+  { name: 'Jupyter', image: jupyter, color: 'bg-gray-200' },
+  { name: 'Matplotlib', image: matplotlib, color: 'bg-green-500' },
+  { name: 'MySQL', image: mysql, color: 'bg-white' },
+  { name: 'Pandas', image: pandas, color: 'bg-teal-500' },
+  { name: 'Tableau', image: tableau, color: 'bg-blue-300' },
+  { name: 'NumPy', image: numpy, color: 'bg-yellow-500' },
+  { name: 'Keras', image: keras, color: 'bg-red-500' },
+  { name: 'SciKit Learn', image: scikitlearn, color: 'bg-gray-800' },
   // Add more skills if needed
 ];
 

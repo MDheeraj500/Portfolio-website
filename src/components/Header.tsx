@@ -16,9 +16,10 @@ const Header: React.FC<HeaderProps> = ({ scrollPosition }) => {
         </a>
         <nav className="hidden md:flex space-x-8">
           {['Home', 'Projects', 'Skills', 'Contact', 'Resume'].map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} className="text-lg hover:text-blue-500 transition-colors">
+            <a key={item} href={item === 'Resume' ? 'https://drive.google.com/file/d/1eMA5HuXE4-D_8BkYUfoqHlqu8DVMHS0l/view?usp=sharing' : `#${item.toLowerCase()}`} target={item === 'Resume' ? '_blank' : '_self'}  className="text-lg hover:text-blue-500 transition-colors">
               {item}
             </a>
+            
           ))}
         </nav>
         <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
