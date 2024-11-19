@@ -5,19 +5,22 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="h-screen flex items-center justify-center text-white relative">
       <div className="text-center">
-        <p className="text-lg md:text-xl mb-2 animate-fade-in">Hello, I am</p>
+        <p className="text-lg md:text-xl mb-2 animate-fade-in"></p>
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in">
-        <span className="text-blue-500">Machiraju </span><span className="text-green-500">Dheeraj </span><span className="text-purple-500">Marthand</span>
+        <span className="text-blue-500">Machiraju </span><span>Dheeraj </span><span className="text-red-500">Marthand</span>
         </h1>
         <h2 className="text-3xl md:text-3xl font-bold mb-6 animate-pulse">
-        A <span className="text-blue-200">Data </span><span className="text-blue-300">Science</span> <span className="text-blue-400">Visionary </span>
-        <span className="text-green-500">and </span> 
-        <span className="text-purple-300">Machine </span><span className="text-purple-400">Learning </span><span className="text-purple-500">Aficionado</span>
+        <span className="text-blue-500">A </span><span className="text-blue-600">Data </span><span className="text-blue-700">Science</span> <span className="text-blue-800">Visionary </span>
+        <span>and </span> 
+        <span className="text-red-500">Machine </span><span className="text-red-600">Learning </span><span className="text-red-700">Aficionado</span>
         </h2>
         <p className="text-lg md:text-xl opacity-80 max-w-2xl mx-auto animate-fade-in">
-        I’m passionate about transforming raw data into meaningful insights that drive impactful decisions. 
-        With a love for all things data, I dive deep into Machine Learning, specializing in NLP and generative AI. 
-        But my journey doesn’t stop there – I balance my love for data with a dedication to fitness, making these two passions the fuel that drives me forward.
+        I am a passionate Data Scientist specializing in NLP, Deep Learning, and Generative AI, 
+        with a strong drive to harness the power of data to solve complex challenges. 
+        My expertise was recognized when I was awarded the title of "Outstanding Skill Individual" 
+        at the United States' second-largest hackathon HackUTD2024. Currently, I thrive in my role at the 
+        University of North Texas Assessment Team, where I collaborate closely with the Vice President of 
+        Student Affairs' team to enable data-driven decisions that enhance institutional effectiveness. 
         </p>
         <a
           href="#projects"

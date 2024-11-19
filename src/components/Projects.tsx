@@ -7,9 +7,31 @@ import 'swiper/css/navigation';
 import fake_news_classifier_image from '../assets/images/fake-news-classifier-image.webp';
 import chicago_crime_data_analysis_image from '../assets/images/chicago-crime-data-analysis-image.webp';
 import movie_review_sentiment_analyzer_image from '../assets/images/movie-review-sentiment-analyzer-image.webp';
-
+import XMeridian_Thumbnail from '../assets/images/XMeridian_Thumbnail.png'
+import ClearCash_Thumbnail from '../assets/images/ClearCash_Thumbnail.png'
 
 const projects = [
+  {
+    title: 'ClearCash - LLM powered Budgeting Tool',
+    image: ClearCash_Thumbnail,
+    tags: ['Large Language Models', 'LangChain', 'Streamlit', 'GenAI', 'Flask', 'Vite + React'],
+    github: 'https://github.com/MDheeraj500/IMDB-Movie-Review-Sentiment-Analyzer',
+    demo: 'https://yourproject3demo.com',
+  },
+  {
+    title: 'Xtended Meridian - Medical Insurance Policy Claim Evaluator',
+    image: XMeridian_Thumbnail,
+    tags: ['Machine Learning', 'Scikit-learn', 'Pandas', 'Natural Language Processing (NLP)', 'Sentiment Analysis', 'Logistic Regression', 'Flask', 'Vite + React', 'Google Colab'],
+    github: 'https://github.com/MDheeraj500/RAG_UTD_Ripple_Hackathon',
+    demo: 'https://xtended-meridian-rag.streamlit.app/',
+  },
+  {
+    title: 'IMDB Movie Review Sentiment Analyzer',
+    image: movie_review_sentiment_analyzer_image,
+    tags: ['Machine Learning', 'Scikit-learn', 'Pandas', 'Natural Language Processing (NLP)', 'Sentiment Analysis', 'Logistic Regression', 'Flask', 'Vite + React', 'Google Colab'],
+    github: 'https://github.com/MDheeraj500/IMDB-Movie-Review-Sentiment-Analyzer',
+    demo: 'https://yourproject3demo.com',
+  },
   {
     title: 'Fake-News Classifier',
     image: fake_news_classifier_image,
@@ -23,13 +45,6 @@ const projects = [
     tags: ['Python', 'Data Visualization', 'Data Analysis', 'Hypothesis Testing', 'Geospatial Analysis', 'Temporal Analysis', 'Tableau', 'Statistical Inference', 'Google Colab', 'Anomaly Detection'],
     github: 'https://github.com/MDheeraj500/Chicago-crime-2023-data-analysis',
     demo: 'https://yourproject2demo.com',
-  },
-  {
-    title: 'IMDB Movie Review Sentiment Analyzer',
-    image: movie_review_sentiment_analyzer_image,
-    tags: ['Machine Learning', 'Scikit-learn', 'Pandas', 'Natural Language Processing (NLP)', 'Sentiment Analysis', 'Logistic Regression', 'Flask', 'Vite + React', 'Google Colab'],
-    github: 'https://github.com/MDheeraj500/IMDB-Movie-Review-Sentiment-Analyzer',
-    demo: 'https://yourproject3demo.com',
   },
 ];
 
