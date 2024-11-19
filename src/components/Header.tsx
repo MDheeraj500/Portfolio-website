@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ scrollPosition }) => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrollPosition > 50 ? 'bg-black bg-opacity-80 backdrop-blur-md' : ''}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <img src="/Dheeraj2.png" alt="Signature" className="h-20" /> {/* Adjust height as needed */}
+          {/* <img src="/Dheeraj2.png" alt="Signature" className="h-20" /> Adjust height as needed */}
         </a>
         <nav className="hidden md:flex space-x-8">
           {['Home', 'Projects', 'Skills', 'Contact', 'Resume'].map((item) => (
