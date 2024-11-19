@@ -15,7 +15,7 @@ const projects = [
     title: 'ClearCash - LLM powered Budgeting Tool',
     image: ClearCash_Thumbnail,
     tags: ['Large Language Models', 'LangChain', 'Streamlit', 'GenAI', 'Flask', 'Vite + React'],
-    github: 'https://github.com/MDheeraj500/IMDB-Movie-Review-Sentiment-Analyzer',
+    github: 'https://github.com/STAVAN-2710/UNTHakathon2024',
     demo: 'https://yourproject3demo.com',
   },
   {
