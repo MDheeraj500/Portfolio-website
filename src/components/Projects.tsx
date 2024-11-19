@@ -12,18 +12,18 @@ import ClearCash_Thumbnail from '../assets/images/ClearCash_Thumbnail.png'
 
 const projects = [
   {
+    title: 'Xtended Meridian - Medical Insurance Policy Claim Evaluator',
+    image: XMeridian_Thumbnail,
+    tags: ['Mixtral LLM', 'LangChain', 'FAISS DB', 'Streamlit', 'HuggingFace', 'RAG', 'Multi-Agentic Framework', 'Python', 'GroQ API'],
+    github: 'https://github.com/MDheeraj500/RAG_UTD_Ripple_Hackathon',
+    demo: 'https://xtended-meridian-rag.streamlit.app/',
+  },
+  {
     title: 'ClearCash - LLM powered Budgeting Tool',
     image: ClearCash_Thumbnail,
     tags: ['Large Language Models', 'LangChain', 'Streamlit', 'GenAI', 'Flask', 'Vite + React'],
     github: 'https://github.com/STAVAN-2710/UNTHakathon2024',
     demo: 'https://yourproject3demo.com',
-  },
-  {
-    title: 'Xtended Meridian - Medical Insurance Policy Claim Evaluator',
-    image: XMeridian_Thumbnail,
-    tags: ['Machine Learning', 'Scikit-learn', 'Pandas', 'Natural Language Processing (NLP)', 'Sentiment Analysis', 'Logistic Regression', 'Flask', 'Vite + React', 'Google Colab'],
-    github: 'https://github.com/MDheeraj500/RAG_UTD_Ripple_Hackathon',
-    demo: 'https://xtended-meridian-rag.streamlit.app/',
   },
   {
     title: 'IMDB Movie Review Sentiment Analyzer',
