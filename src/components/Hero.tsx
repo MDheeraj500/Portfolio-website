@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <h2 className="text-3xl md:text-3xl font-bold mb-6 animate-pulse">
         <span className="text-blue-500">A </span><span className="text-blue-600">Data </span><span className="text-blue-700">Science</span> <span className="text-blue-800">Visionary </span>
         <span>and </span> 
-        <span className="text-red-500">Machine </span><span className="text-red-600">Learning </span><span className="text-red-700">Aficionado</span>
+        <span className="text-red-500">Generative </span><span className="text-red-600">AI </span><span className="text-red-700">Aficionado</span>
         </h2>
         <p className="text-lg md:text-xl opacity-80 max-w-2xl mx-auto animate-fade-in">
         I am a passionate Data Scientist specializing in NLP, Deep Learning, and Generative AI, 
