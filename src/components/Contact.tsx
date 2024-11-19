@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
         </h2>
         <div className="flex justify-center space-x-20">
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/dheeraj-m-7a9112224/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative group"
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
             <Linkedin size={60} className="relative z-10 text-white transition-transform duration-300 group-hover:scale-125 group-hover:shadow-lg" />
           </a>
           <a
-            href="https://github.com/your-github-username"
+            href="https://github.com/MDheeraj500"
             target="_blank"
             rel="noopener noreferrer"
             className="relative group"
