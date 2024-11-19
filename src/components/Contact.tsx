@@ -1,87 +1,41 @@
-import React, { useState } from 'react';
-import { Send } from 'lucide-react';
+import React from 'react';
+import { Linkedin, Github, Mail } from 'lucide-react';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the form data to a server, use GPt to setup your own email
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-
-    const email = "dheerajmachiraju24@gmail.com";
-
-    const mailtoLink = `mailto:${email}`;
-
-    window.location.href = mailtoLink;
-  };
-
-  
-
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center">Get in Touch</h2>
-        <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={4}
-                className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition-colors duration-300 flex items-center justify-center"
-            >
-              Send Message
-              <Send size={20} className="ml-2" />
-            </button>
-          </form>
+        <h2 className="text-5xl font-extrabold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 animate-pulse">
+          Let's Connect
+        </h2>
+        <div className="flex justify-center space-x-20">
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group"
+          >
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-500 opacity-50 blur-xl transition duration-500 group-hover:opacity-75 group-hover:animate-spin-slow"></div>
+            <Linkedin size={60} className="relative z-10 text-white transition-transform duration-300 group-hover:scale-125 group-hover:shadow-lg" />
+          </a>
+          <a
+            href="https://github.com/your-github-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group"
+          >
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gray-400 via-gray-600 to-gray-800 opacity-50 blur-xl transition duration-500 group-hover:opacity-75 group-hover:animate-spin-slow"></div>
+            <Github size={60} className="relative z-10 text-white transition-transform duration-300 group-hover:scale-125 group-hover:shadow-lg" />
+          </a>
+          <a
+            href="mailto:dheerajmachiraju24@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group"
+          >
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-red-400 via-pink-500 to-purple-500 opacity-50 blur-xl transition duration-500 group-hover:opacity-75 group-hover:animate-spin-slow"></div>
+            <Mail size={60} className="relative z-10 text-white transition-transform duration-300 group-hover:scale-125 group-hover:shadow-lg" />
+          </a>
         </div>
       </div>
     </section>
@@ -89,104 +43,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
-
-
-// import React, { useState } from 'react';
-// import { Send } from 'lucide-react';
-// import emailjs from 'emailjs-com'; // Import EmailJS
-
-// const Contact: React.FC = () => {
-//   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     message: '',
-//   });
-
-//   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-//     const { name, value } = e.target;
-//     setFormData(prevState => ({
-//       ...prevState,
-//       [name]: value,
-//     }));
-//   };
-
-//   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-//     e.preventDefault();
-
-//     // Prepare data for EmailJS
-//     const templateParams = {
-//       from_name: formData.name,
-//       from_email: formData.email,
-//       message: formData.message,
-//     };
-
-//     // Send email via EmailJS
-//     emailjs.send('service_fmg59ls', 'template_0n8ffr5', templateParams, 'pWg7pZ33q8HVzclfR')
-//       .then((response) => {
-//         console.log('SUCCESS!', response.status, response.text);
-//         alert('Thank you for your message! I will get back to you soon.');
-//         setFormData({ name: '', email: '', message: '' });
-//       }, (error) => {
-//         console.error('FAILED...', error);
-//         alert('Oops! Something went wrong. Please try again.');
-//       });
-//   };
-
-//   return (
-//     <section id="contact" className="py-20 bg-gray-900">
-//       <div className="container mx-auto px-4">
-//         <h2 className="text-4xl font-bold mb-12 text-center">Get in Touch</h2>
-//         <div className="max-w-2xl mx-auto">
-//           <form onSubmit={handleSubmit} className="space-y-6">
-//             <div>
-//               <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-//               <input
-//                 type="text"
-//                 id="name"
-//                 name="name"
-//                 value={formData.name}
-//                 onChange={handleChange}
-//                 required
-//                 className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//               />
-//             </div>
-//             <div>
-//               <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-//               <input
-//                 type="email"
-//                 id="email"
-//                 name="email"
-//                 value={formData.email}
-//                 onChange={handleChange}
-//                 required
-//                 className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//               />
-//             </div>
-//             <div>
-//               <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-//               <textarea
-//                 id="message"
-//                 name="message"
-//                 value={formData.message}
-//                 onChange={handleChange}
-//                 required
-//                 rows={4}
-//                 className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//               ></textarea>
-//             </div>
-//             <button
-//               type="submit"
-//               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-md transition-colors duration-300 flex items-center justify-center"
-//             >
-//               Send Message
-//               <Send size={20} className="ml-2" />
-//             </button>
-//           </form>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Contact;
