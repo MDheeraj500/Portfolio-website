@@ -18,6 +18,10 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.green {
+  color: #07670a !important;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -155,8 +159,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 2.5em !important;
+  width: 10em !important;
 }
 
 .navbar-nav .nav-link {
@@ -593,6 +597,12 @@ button:focus {
   padding-left: 1px !important;
 }
 
+.img-fluid {
+  width: 325px;
+  height: 325px
+}
+
+
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
@@ -740,4 +750,211 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+
+/* ===== Work Experience Section - Modern Card Stack ===== */
+/* ===== Work Experience Section - Modern Floating Design ===== */
+.work-experience-section {
+  position: relative;
+  background-image: var(--section-background-color) !important;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+
+.timeline-container {
+  position: relative;
+  margin: 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.8s ease forwards;
+}
+
+.experience-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-item:nth-child(3) { animation-delay: 0.3s; }
+.experience-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Floating Number Badge */
+.experience-badge {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--imp-text-color), #8a49a8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(199, 112, 240, 0.4);
+  position: relative;
+  margin-top: 10px;
+}
+
+.experience-badge::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgba(199, 112, 240, 0.3);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.experience-number {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Content Card */
+
+
+.experience-content {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(199, 112, 240, 0.25);
+  border-radius: 20px;
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(15px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.experience-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--imp-text-color), #8a49a8, var(--imp-text-color));
+  border-radius: 20px 20px 0 0;
+}
+
+.experience-content:hover {
+  transform: translateY(-5px);
+  border-color: rgba(199, 112, 240, 0.5);
+  box-shadow: 0 15px 40px rgba(199, 112, 240, 0.2);
+}
+
+/* Header with Company and Duration */
+.experience-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+.company-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.company-name {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.role-title {
+  color: var(--imp-text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.duration-badge {
+  background: rgba(199, 112, 240, 0.15);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  white-space: nowrap;
+  backdrop-filter: blur(10px);
+  flex-shrink: 0;
+}
+
+.experience-description {
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 15px 0 0 0;
+  opacity: 0.95;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .experience-badge {
+    align-self: flex-start;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .experience-number {
+    font-size: 1.2rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .duration-badge {
+    align-self: flex-start;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+  
+  .experience-content {
+    padding: 25px;
+  }
 }

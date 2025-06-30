@@ -5,9 +5,12 @@ import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Thumbnail_2 from "../../Assets/Projects/Thumbnail_2.png";
+import Multilingual from "../../Assets/Projects/Multilingual_QA.png";
+import XMeridianWorkflow from "../../Assets/Projects/XMeridianWorkflow.png.png";
+import ChicagoCrime from "../../Assets/Projects/ChicagoCrime.jpg";
+import FakeNews from "../../Assets/Projects/FakeNews.jpg";
+import SentimentAnalysis from "../../Assets/Projects/SentimentAnalysis.png";
 
 function Projects() {
   return (
@@ -18,73 +21,66 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few public projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={XMeridianWorkflow}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="AI Medical Insurance Claims Evaluator"
+              description="Developed an award-winning AI system that automates medical insurance claim evaluation. Engineered the full RAG pipeline, leveraging LangChain for LLM orchestration, FAISS for high-speed semantic search, and HuggingFace Transformers for vector embeddings."
+              ghLink="https://devpost.com/software/meridian_rag?ref_content=my-projects-tab&ref_feature=my_projects"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Multilingual}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="AI-Driven Multilingual QA System"
+              description="Built a multi-agent question-answering system using LangChain orchestration and RAG architecture with dual database integration (PostgreSQL/MongoDB) and FAISS vector search. Implemented intelligent query routing, semantic embeddings via HuggingFace Transformers. Utilized evaluation frameworks: ROUGE, BERTScore, and RAGAS."
+              ghLink="https://github.com/MDheeraj500/capstone-2025/tree/Sudhanshu"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={SentimentAnalysis}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="IMDB Movie Review Sentiment Analyzer 🎥"
+              description="Built a sentiment analysis system that classifies movie reviews using the IMDB dataset. Designed an NLP pipeline with NLTK preprocessing, TF-IDF feature extraction, and trained multiple models achieving ~90% F1 score with Logistic Regression. The system is deployed via Flask REST API and includes a React frontend for real-time predictions."
+              ghLink="https://github.com/MDheeraj500/IMDB-Movie-Review-Sentiment-Analyzer"             
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ChicagoCrime}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Chicago-crime-2023-data-analysis"
+              description="Leveraging Python and Tableau, this project uncovers spatial, temporal, and crime‐type trends in Chicago’s 2023 crime data. Built ETL pipelines with pandas for geospatial and time‐series analysis, designed dashboards in Tableau to visualize monthly crime trajectories and heatmaps of high‐incident streets, and comparative arrest‐rate analyses."
+              ghLink="https://github.com/MDheeraj500/Chicago-crime-2023-data-analysis"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={Thumbnail_2}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="AI-powered budgeting application"
+              description="ClearCash is an AI-driven budgeting app built for UNT Hackathon 2024 that pairs a React + Tailwind UI with a Flask API backed by MySQL. It integrates large-language-model prompts to analyze spending patterns and deliver personalized financial advice, all secured through authenticated REST endpoints and encrypted data storage."
+              ghLink="https://github.com/STAVAN-2710/UNTHakathon2024"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={FakeNews}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Fake News Classifier"
+              description="This project builds a fake news detection system using dataset of 20,000+ news articles. The pipeline includes comprehensive NLP preprocessing and TF-IDF vectorization with 5,000 features. Three classifiers were implemented and compared: Multinomial Naive Bayes (82.1% accuracy), Random Forest (96.2%), and XGBoost (97.6%)"
+              ghLink="https://github.com/MDheeraj500/fake-news-classifier-project"
             />
           </Col>
         </Row>
